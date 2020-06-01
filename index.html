@@ -170,30 +170,33 @@
         <section class="section javascript" id="licences">
             <div class="sec-title">
                 <span class="icon fa fa-code"></span>
-                <h2>Jquery and javascript</h2>
+                <h2>Licences</h2>
             </div>
 
             <br>
             <div class="sec-content">
+                <h2>Front-end license</h2>
 
-                <h3>This theme imports three types of Javascript files.</h3>
-                <ul>
-                    <li>jQuery</li>
-                    <li>Custom scripts <strong>(script.js)</strong></li>
-                    <li>Some plugins</li>
-                    <br>
-                    <li><strong>jQuery</strong> is a Javascript library that greatly reduces the amount of code that you
-                        must write.
-                    </li>
-                    <li>Most of the animation in this site is carried out from the customs scripts. There are a few
-                        functions worth looking over.
-                    </li>
-                </ul>
+                <br><br>
+                <h2>Back-end license</h2>
                 <br>
-                <p>In addition to the custom scripts, I have implemented few "tried and true" plugins to create the
-                    effects. This plugin is packed, so you won't need to manually edit anything in the file. The only
-                    necessary thing to know is how to call the method</p>
-
+                <ol>
+                    <li>Open the <strong>token-backend</strong> in IntelliJ IDEA</li>
+                    <li>Open the <strong>setting.xml</strong></li>
+                    <li>
+                        Replace your license
+                        <pre>
+    &lt;servers>
+        &lt;server>
+            &lt;id>github&lt;/id>
+            &lt;username>github&lt;/username>
+            &lt;password><strong style="color:#0000ff;">REPLACE_YOUR_TOKEN</strong>&lt;/password>
+        &lt;/server>
+    &lt;/servers>
+                        </pre>
+                    </li>
+                </ol>
+                </p>
 
             </div>
 
