@@ -41,12 +41,13 @@
                     </li>
                     <li><a href="#pre-installation">Pre installation <span class="fa fa-arrow-right"></span></a>
                     </li>
-                    <li><a href="#licences">Licences <span class="fa fa-arrow-right"></span></a></li>
+                    <li><a href="#licences">Configuration<span class="fa fa-arrow-right"></span></a></li>
                     <li><a href="#db-setup">Setup database<span
                             class="fa fa-arrow-right"></span></a></li>
-                    <li><a href="#frontend-development-environment">Frontend development environment <span
-                            class="fa fa-arrow-right"></span></a></li>
+
                     <li><a href="#backend-development-environment">Backend development environment <span
+                            class="fa fa-arrow-right"></span></a></li>
+                    <li><a href="#frontend-development-environment">Frontend development environment <span
                             class="fa fa-arrow-right"></span></a></li>
                     <li><a href="#production">Production<span class="fa fa-arrow-right"></span></a></li>
                     <li><a href="#support">Support <span class="fa fa-arrow-right"></span></a></li>
@@ -73,19 +74,18 @@
 
             <br>
             <div class="sec-content">
-                <h2>Zentec</h2>
-                <h3>Business and Consulting HTML Template</h3>
+                <h2>Debaly</h2>
+                <h3>Debaly Token - Que Management System</h3>
 
                 <div class="separator"></div>
 
-                <strong>Created :</strong> 12/01/2020<br>
-                <strong>By :</strong> TemplatePath<br>
-                <strong>Support Forum :</strong> <a href="https://templatepath.ticksy.com/" target="_blank">https://templatepath.ticksy.com/</a><br>
+                <strong>By :</strong> debaly.com<br>
+                <strong>Support Forum :</strong> <a href="https://templatepath.ticksy.com/" target="_blank">support@debaly.com</a><br>
 
                 <br>
-                <p>Thank you for purchasing <strong>Zentec - Business and Consulting HTML Template</strong>. If you have
-                    any questions that are beyond the scope of this help file, please feel free to email, via my user
-                    page contact form or put a ticket at Support Center .<br>Thankyou so much!</p>
+                <p>Thank you for purchasing <strong>Debaly Token - Que Management System</strong>. If you have
+                    any questions that are beyond this application, please feel free to email, via my user
+                    page contact form or put a ticket at Support Center .<br>Thank you so much!</p>
 
             </div>
 
@@ -100,8 +100,27 @@
 
             <br>
             <div class="sec-content">
+                <b>Windows</b>
+                <br/>
+                To use Chrome Browser on Windows, you'll need:
 
+                Windows 7, Windows 8, Windows 8.1, Windows 10 or later
+                An Intel Pentium 4 processor or later that's SSE2 capable
+                Note: Servers require Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, or Windows Server 2016.
+<br/>
+               <b> Mac</b>
+                <br/>
+                To use Chrome Browser on Mac, you'll need:
+                OS X Yosemite 10.10 or later
+                <br/>
+                <b>Linux</b>
+                <br/>
+                To use Chrome Browser on Linux, you'll need:
 
+                64-bit Ubuntu 14.04+, Debian 8+, openSUSE 13.3+, or Fedora Linux 24+
+                An Intel Pentium 4 processor or later that's SSE2 capable
+                <br/>
+           <Text>Browser : google chrome latest version</Text>
             </div>
 
         </section>
@@ -172,18 +191,53 @@
         <section class="section javascript" id="licences">
             <div class="sec-title">
                 <span class="icon fa fa-code"></span>
-                <h2>Licences</h2>
+                <h2>Configuration</h2>
             </div>
 
             <br>
             <div class="sec-content">
-                <h2>Front-end license</h2>
-
-                <br><br>
-                <h2>Back-end license</h2>
+                <h2>Getting Debaly Token</h2>
                 <br>
                 <ol>
-                    <li>Open the <strong>token-backend</strong> in IntelliJ IDEA</li>
+
+                    <li>Open the <strong><a href="https://verify.debaly.com"
+                                            target="_blank">https://verify.debaly.com</strong></a> in Browser</li>
+                    <li>Sign in with codecanyon.net (envato) Creditial</li>
+                    <li>Press CONFIGURE MAC ADDRESS for Debaly Token - Queue Management System</li>
+                    <li>Add Your MAC Address</strong></li>
+                    <Text><b>Note</b></Text>
+                    <br/>
+                    <Text>You can add 3 MAC Address</Text>
+                   <br/>
+                    <Text>MAC Address FORMAT - <b>02:1B:43:13:54:C3</b></Text>
+                    <br/>
+                    <Text><a href="https://kb.netgear.com/1005/How-do-I-find-my-device-s-MAC-address"
+                                            target="_blank">How to Find MAC Address</a></Text>
+
+                    <figure ><img alt="" src="images/macInfo.png" style="width:50%;height:50%;margin: 10px" "></figure>
+
+                </ol>
+                <br>
+                <h2>Front-end Configuration</h2>
+                <br>
+                <ol>
+                    <li>Open the <strong>token-client</strong> in Any IDE</li>
+                    <li>Open the <strong>src/environment.js</strong></li>
+                    <li>Replace your debaly-token in DEBALY_TOKEN variable</strong></li>
+
+
+                        <pre>
+    const API_URL = 'http://localhost:8080';
+    const DEBALY_TOKEN = '<strong style="color:#0000ff;">REPLACE_YOUR_TOKEN</strong>';
+    export {API_URL,DEBALY_TOKEN};
+                        </pre>
+
+                </ol>
+                <br>
+                <h2>Back-end Configuration</h2>
+                <br>
+                <ol>
+                    <li>Open the <strong>token-server</strong> in IntelliJ IDEA</li>
                     <li>Open the <strong>setting.xml</strong></li>
                     <li>
                         Replace your license
@@ -216,21 +270,42 @@
                 <p>Create a database <i>eg: token</i></p>
                 <ol>
                     <li><p>Open MySQL connection</p>
-                        <figure class="image-box"><img alt="" src="images/db1.png"></figure>
+                        <figure class="image-box"><img style="width:60%;height:60%;margin: 10px" alt="" src="images/db1.png"></figure>
                     </li>
                     <li><p>Click create schema button</p>
-                        <figure class="image-box"><img alt="" src="images/db2.png"></figure>
+                        <figure class="image-box"><img  style="width:60%;height:60%;margin: 10px" alt="" src="images/db2.png"></figure>
                     </li>
                     <li><p>Give a name for database <i>eg: token</i></p>
-                        <figure class="image-box"><img alt="" src="images/db3.png"></figure>
+                        <figure class="image-box"><img  style="width:60%;height:60%;margin: 10px" alt="" src="images/db3.png"></figure>
                     </li>
                     <li><p> Run the query by clicking apply button</p>
-                        <figure class="image-box"><img alt="" src="images/db4.png"></figure>
+                        <figure class="image-box"><img  style="width:60%;height:60%;margin: 10px" alt="" src="images/db4.png"></figure>
                     </li>
                     <li><p> Verify the database</p>
-                        <figure class="image-box"><img alt="" src="images/db5.png"></figure>
+                        <figure class="image-box"><img   alt="" src="images/db5.png"></figure>
                     </li>
                 </ol>
+            </div>
+
+        </section>
+
+        <!--Contact Form Settings-->
+        <section class="section contact-form" id="backend-development-environment">
+            <div class="sec-title">
+                <span class="icon fa fa-th-list"></span>
+                <h2>Run backend in development environment</h2>
+            </div>
+
+            <br>
+            <div class="sec-content">
+                <ol>
+                    <li>open the token-backend in IntelliJ IDEA</li>
+                    <li><figure class="image-box"><img alt="" src="images/terminal.png"></figure></li>
+                    <li>Type <code>mvn install -s settings.xml</code> in that terminal and press enter</li>
+                    <li>Type <code>mvn spring-boot:run</code> in that terminal and press enter</li>
+                </ol>
+                <h3><strong style="color: maroon">Congratulation you successfully setup the token backend</strong></h3>
+
             </div>
 
         </section>
@@ -274,49 +349,54 @@
 
         </section>
 
-        <!--Contact Form Settings-->
-        <section class="section contact-form" id="backend-development-environment">
-            <div class="sec-title">
-                <span class="icon fa fa-th-list"></span>
-                <h2>Run backend in development environment</h2>
-            </div>
-
-            <br>
-            <div class="sec-content">
-                <ol>
-                    <li>open the token-backend in IntelliJ IDEA</li>
-                    <li>
-                        <figure class="image-box"><img alt="" src="images/terminal.png"></figure>
-                    </li>
-                    <li>Type <code>mvn install -s settings.xml</code> in that terminal and press enter</li>
-                    <li>Type <code>mvn spring-boot:run</code> in that terminal and press enter</li>
-                </ol>
-                <h3><strong style="color: maroon">Congratulation you successfully setup the token backend</strong></h3>
-
-            </div>
-
-        </section>
-
         <!--Sources and Credits-->
         <section class="section sources-credits" id="production">
             <div class="sec-title">
                 <span class="icon fa fa-credit-card"></span>
-                <h2>Deplot to production</h2>
+                <h2>Sources and Credits</h2>
             </div>
 
             <br>
             <div class="sec-content">
-                <p style="color: #ac2925"><strong>Important!</strong></p>
-                <p>Please follow
-                    <a href="#pre-installation">Pre installation</a>,
-                    <a href="#licences">License</a> and
-                    <a href="#db-setup">Database setup</a>
-                    before deploy to production</p>
+
+                <h3>Fonts Used in the template are Google Fonts</h3>
+
+                <p><strong> Fonts Used are :</strong></p>
+                <p>Arimo</p>
+                <p>Sans Serif</p>
+
                 <br>
-                <h3>Deploy frontend in production environment <a
-                        href="https://codeburst.io/how-to-setup-nginx-for-react-a504f38f95ed">link</a></h3>
-                <h3>Deploy back end in production environment <a
-                        href="https://www.baeldung.com/spring-boot-app-as-a-service">link</a></h3>
+
+                <p><strong> File Used For Animation Effects :</strong></p>
+                <p><strong>wow.js</strong> (in js Folder)</p>
+                <p><strong>appear.js</strong> (in js Folder)</p>
+                <p><strong>animate.css</strong> (in css Folder)</p>
+
+                <br>
+
+                <p><strong> Sliders Used Are :</strong></p>
+                <p>Owl Carousel</p>
+                <br>
+                Every Code is properly commented for Editing Ease.
+                <br><br>
+
+                <p><strong> Icons Used are :</strong></p>
+                <br>
+                <p>Fontawsome Icons<br><a href="https://fontawesome.com/" target="_blank">https://fontawesome.com/</a>
+                </p>
+
+                <br>
+                <p>Flaticon Icons<br><a href="http://flaticon.com" target="_blank">Flaticon.com</a></p>
+                <p>Used flaticons icon pack is attached as a zip with Documentation.</p><br>
+
+                <p> From Flaticon, Icons are custom selected and downloaded as a font. If you want to use more icons you
+                    need to select icons of your choice from <a href="http://flaticon.com"
+                                                                target="_blank">flaticon.com</a> as font
+                    files and replace with the already added files.<br><strong>(Previous Flaticon icons will be removed
+                        when you will use your own selected/downloaded Flaticons font)</strong></p>
+
+                <br>
+
 
             </div>
 
@@ -333,11 +413,11 @@
             <div class="sec-content">
 
                 <h3>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to
-                    help you if you have any questions relating to this theme. No guarantees, but I'll do my best to
+                    help you if you have any questions relating to this Application. We will do my best to
                     assist. If you have any queries, please feel free to contact us at Support Center.</h3>
 
-                <p>Submit a Ticket at <strong>Ticksy Forum</strong> : <a href="https://templatepath.ticksy.com/"
-                                                                         target="_blank">https://templatepath.ticksy.com/</a>
+                <p>Submit a Ticket at : <a href="https://themeforest.net/item/zentec-it-solutions-and-services-company-template/25508959/support/"
+                                                                         target="_blank">Support</a>
                 </p>
 
             </div>
