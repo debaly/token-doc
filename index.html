@@ -57,8 +57,8 @@
 
         </div>
 
-        <div class="copyright">Copyright &copy; <a href="https://themeforest.net/user/template_path/portfolio"
-                                                   target="_blank">TemplatePath</a>
+        <div class="copyright">Copyright &copy; <a href="https://debaly.com"
+                                                   target="_blank">Debaly</a>
             2020
         </div>
     </aside>
@@ -69,7 +69,7 @@
         <section class="section introduction" id="introduction">
             <div class="sec-title">
                 <span class="icon fa fa-windows"></span>
-                <h2>Intoduction</h2>
+                <h2>Introduction</h2>
             </div>
 
             <br>
@@ -80,12 +80,13 @@
                 <div class="separator"></div>
 
                 <strong>By :</strong> debaly.com<br>
-                <strong>Support Forum :</strong> <a href="https://templatepath.ticksy.com/" target="_blank">support@debaly.com</a><br>
+                <strong>Support Forum :</strong> <a href="mailto:info@debaly.com?subject=Que Management Support"
+                                                    target="_blank">info@debaly.com</a><br>
 
                 <br>
-                <p>Thank you for purchasing <strong>Debaly Token - Que Management System</strong>. If you have
+                <p>Thank you for purchasing <strong>Debaly Que Management - Que Management System</strong>. If you have
                     any questions that are beyond this application, please feel free to email, via my user
-                    page contact form or put a ticket at Support Center .<br>Thank you so much!</p>
+                    page contact form or put a ticket at envato support center .<br>Thank you so much!</p>
 
             </div>
 
@@ -102,13 +103,12 @@
             <div class="sec-content">
                 <b>Windows</b>
                 <br/>
-                To use Chrome Browser on Windows, you'll need:
+                Chrome Browser on Windows, you'll need:
 
                 Windows 7, Windows 8, Windows 8.1, Windows 10 or later
-                An Intel Pentium 4 processor or later that's SSE2 capable
-                Note: Servers require Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, or Windows Server 2016.
-<br/>
-               <b> Mac</b>
+
+                <br/>
+                <b> Mac</b>
                 <br/>
                 To use Chrome Browser on Mac, you'll need:
                 OS X Yosemite 10.10 or later
@@ -118,9 +118,7 @@
                 To use Chrome Browser on Linux, you'll need:
 
                 64-bit Ubuntu 14.04+, Debian 8+, openSUSE 13.3+, or Fedora Linux 24+
-                An Intel Pentium 4 processor or later that's SSE2 capable
                 <br/>
-           <Text>Browser : google chrome latest version</Text>
             </div>
 
         </section>
@@ -171,7 +169,7 @@
                        target="_blank">ubuntu</a>
                 </li>
                 <br><br>
-                <h2>IDE</h2>
+                <h2>IDE (optional)</h2>
                 <br>
                 <li>IntelliJ IDEA
                     <a href="https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows&code=IIC"
@@ -196,48 +194,49 @@
 
             <br>
             <div class="sec-content">
-                <h2>Getting Debaly Token</h2>
+                <h2>Getting Debaly Que Management system License</h2>
                 <br>
                 <ol>
 
                     <li>Open the <strong><a href="https://verify.debaly.com"
-                                            target="_blank">https://verify.debaly.com</strong></a> in Browser</li>
+                                            target="_blank">https://verify.debaly.com</strong></a> in Browser
+                    </li>
                     <li>Sign in with codecanyon.net (envato) Creditial</li>
                     <li>Press CONFIGURE MAC ADDRESS for Debaly Token - Queue Management System</li>
                     <li>Add Your MAC Address</strong></li>
                     <Text><b>Note</b></Text>
                     <br/>
                     <Text>You can add 3 MAC Address</Text>
-                   <br/>
+                    <br/>
                     <Text>MAC Address FORMAT - <b>02:1B:43:13:54:C3</b></Text>
                     <br/>
                     <Text><a href="https://kb.netgear.com/1005/How-do-I-find-my-device-s-MAC-address"
-                                            target="_blank">How to Find MAC Address</a></Text>
+                             target="_blank">How to Find MAC Address</a></Text>
 
-                    <figure ><img alt="" src="images/macInfo.png" style="width:50%;height:50%;margin: 10px" "></figure>
+                    <figure><img alt="" src="images/macInfo.png" style="width:50%;height:50%;margin: 10px" "></figure>
 
                 </ol>
                 <br>
-                <h2>Front-end Configuration</h2>
+                <h2>Que Management Client Configuration</h2>
                 <br>
                 <ol>
-                    <li>Open the <strong>token-client</strong> in Any IDE</li>
+                    <li>Open the <strong>que-management-client</strong> in IDE</li>
                     <li>Open the <strong>src/environment.js</strong></li>
-                    <li>Replace your debaly-token in DEBALY_TOKEN variable</strong></li>
+                    <li>Replace your debaly license in DEBALY_TOKEN variable</strong></li>
 
 
-                        <pre>
+                    <pre>
     const API_URL = 'http://localhost:8080';
-    const DEBALY_TOKEN = '<strong style="color:#0000ff;">REPLACE_YOUR_TOKEN</strong>';
+    const DEBALY_TOKEN = '<strong style="color:#0000ff;">REPLACE_YOUR_LICENSE</strong>';
     export {API_URL,DEBALY_TOKEN};
                         </pre>
 
                 </ol>
                 <br>
-                <h2>Back-end Configuration</h2>
+                <h2>Que Management Server Configuration</h2>
                 <br>
                 <ol>
-                    <li>Open the <strong>token-server</strong> in IntelliJ IDEA</li>
+                    <li>Open the <strong>que-management-server</strong> in IDE</li>
                     <li>Open the <strong>setting.xml</strong></li>
                     <li>
                         Replace your license
@@ -270,19 +269,32 @@
                 <p>Create a database <i>eg: token</i></p>
                 <ol>
                     <li><p>Open MySQL connection</p>
-                        <figure class="image-box"><img style="width:60%;height:60%;margin: 10px" alt="" src="images/db1.png"></figure>
+                        <figure class="image-box"><img style="width:60%;height:60%;margin: 10px" alt=""
+                                                       src="images/db1.png"></figure>
                     </li>
                     <li><p>Click create schema button</p>
-                        <figure class="image-box"><img  style="width:60%;height:60%;margin: 10px" alt="" src="images/db2.png"></figure>
+                        <figure class="image-box"><img style="width:60%;height:60%;margin: 10px" alt=""
+                                                       src="images/db2.png"></figure>
                     </li>
                     <li><p>Give a name for database <i>eg: token</i></p>
-                        <figure class="image-box"><img  style="width:60%;height:60%;margin: 10px" alt="" src="images/db3.png"></figure>
+                        <figure class="image-box"><img style="width:60%;height:60%;margin: 10px" alt=""
+                                                       src="images/db3.png"></figure>
                     </li>
                     <li><p> Run the query by clicking apply button</p>
-                        <figure class="image-box"><img  style="width:60%;height:60%;margin: 10px" alt="" src="images/db4.png"></figure>
+                        <figure class="image-box"><img style="width:60%;height:60%;margin: 10px" alt=""
+                                                       src="images/db4.png"></figure>
                     </li>
                     <li><p> Verify the database</p>
-                        <figure class="image-box"><img   alt="" src="images/db5.png"></figure>
+                        <figure class="image-box"><img alt="" src="images/db5.png"></figure>
+                    </li>
+                    <li>
+                    <p>Go to the file <code>que-management-server/src/main/resources/application.properties</code></p>
+                        <pre>
+spring.datasource.url=jdbc:mysql://localhost:3306/<strong style="color:#0000ff;">REPLACE_YOUR_DB_NAME</strong>?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false&allowPublicKeyRetrieval=true
+
+spring.datasource.username=<strong style="color:#0000ff;">REPLACE_YOUR_DB_USER</strong>
+spring.datasource.password=<strong style="color:#0000ff;">REPLACE_YOUR_DB_PASSWORD</strong>
+                    </pre>
                     </li>
                 </ol>
             </div>
@@ -293,18 +305,17 @@
         <section class="section contact-form" id="backend-development-environment">
             <div class="sec-title">
                 <span class="icon fa fa-th-list"></span>
-                <h2>Run backend in development environment</h2>
+                <h2>Run Que Management server in development environment</h2>
             </div>
 
             <br>
             <div class="sec-content">
                 <ol>
-                    <li>open the token-backend in IntelliJ IDEA</li>
-                    <li><figure class="image-box"><img alt="" src="images/terminal.png"></figure></li>
+                    <li>Go to the que-management-server location in terminal</li>
                     <li>Type <code>mvn install -s settings.xml</code> in that terminal and press enter</li>
                     <li>Type <code>mvn spring-boot:run</code> in that terminal and press enter</li>
                 </ol>
-                <h3><strong style="color: maroon">Congratulation you successfully setup the token backend</strong></h3>
+                <h3><strong style="color: maroon">Congratulation you successfully setup the Que Management Server</strong></h3>
 
             </div>
 
@@ -313,38 +324,17 @@
         <section class="section map-settings" id="frontend-development-environment">
             <div class="sec-title">
                 <span class="icon fa fa-map-marker"></span>
-                <h2>Run frontend in development environment</h2>
+                <h2>Run Que Management Client in development environment</h2>
             </div>
 
             <br>
             <div class="sec-content">
-
-                <p><strong style="color:#ff0000; font-size:24px; padding-bottom:10px;">NOTE</strong><br>From Now and
-                    Onward If you want to use google maps, <strong>Google map API key</strong> is necessary. For this
-                    reason below is a brief description how to generate google api key and where to use in the template.<br><strong>Without
-                        API KEY</strong> map will not appear.</p>
-                <br>
-                <h3>Google Map API key dashboard will look like this.</h3>
-                <p>You will need to register all those pages on which you are showing Google Map, with respect to your
-                    website / domain.</p>
-                <figure class="image-box"><img alt="" src="images/api-image.jpg"></figure>
-                <br><br>
-
-                <h3>After Generating API KEY use as Shown.</h3>
-                <p>You will find given code at the bottom of the file on which map is located</p>
-                <figure class="image-box"><img alt="" src="images/api-key.jpg"></figure>
-                <br><br>
-
-
-                <h3>Adding Your Information.</h3>
-                <p>You have to change Required / Needed Values in <strong>Map Container</strong> Of the Page. You can
-                    also change icon of the marker in the file named <strong>map-script.js</strong> inside <strong>js
-                        folder</strong></p>
-                <p>Edit The Attribute values of DIV class named <strong>MAP CANVAS</strong> inside Map Container with
-                    your credentials.<br> As Below</p>
-
-                <figure class="image-box"><img alt="" src="images/map-settings.jpg"></figure>
-
+                <ol>
+                    <li>Go to the que-management-client location in terminal</li>
+                    <li>Type <code>yarn add</code> or <code>npm install</code> in that terminal and press enter</li>
+                    <li>Type <code>yarn start</code> or <code>npm start</code> in that terminal and press enter</li>
+                </ol>
+                <h3><strong style="color: maroon">Congratulation you successfully setup the Que Management Client</strong></h3>
             </div>
 
         </section>
@@ -384,13 +374,11 @@
 
             <br>
             <div class="sec-content">
-
-                <h3>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to
+                <h3>Once again, thank you so much for purchasing this <b>Que Management System</b>. As I said at the beginning, We glad to
                     help you if you have any questions relating to this Application. We will do my best to
                     assist. If you have any queries, please feel free to contact us at Support Center.</h3>
 
-                <p>Submit a Ticket at : <a href="https://themeforest.net/item/zentec-it-solutions-and-services-company-template/25508959/support/"
-                                                                         target="_blank">Support</a>
+                <p>Submit a Ticket at Support
                 </p>
 
             </div>
