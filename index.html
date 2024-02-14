@@ -41,7 +41,7 @@
                     </li>
                     <li><a href="#pre-installation">Pre installation <span class="fa fa-arrow-right"></span></a>
                     </li>
-                    <li><a href="#licences">License<span class="fa fa-arrow-right"></span></a></li>
+<!--                    <li><a href="#licences">License<span class="fa fa-arrow-right"></span></a></li>-->
                     <li><a href="#db-setup">Setup database<span
                             class="fa fa-arrow-right"></span></a></li>
 
@@ -186,75 +186,75 @@
 
 
         <!--Javascript-->
-        <section class="section javascript" id="licences">
-            <div class="sec-title">
-                <span class="icon fa fa-key"></span>
-                <h2>License</h2>
-            </div>
+<!--        <section class="section javascript" id="licences">-->
+<!--            <div class="sec-title">-->
+<!--                <span class="icon fa fa-key"></span>-->
+<!--                <h2>License</h2>-->
+<!--            </div>-->
 
-            <br>
-            <div class="sec-content">
-                <h2>Getting Debaly Que Management system License</h2>
-                <br>
-                <ol>
+<!--            <br>-->
+<!--            <div class="sec-content">-->
+<!--                <h2>Getting Debaly Que Management system License</h2>-->
+<!--                <br>-->
+<!--                <ol>-->
 
-                    <li>Open the <strong><a href="https://verify.debaly.com"
-                                            target="_blank">https://verify.debaly.com</strong></a> in Browser
-                    </li>
-                    <li>Sign in with codecanyon.net (envato) Creditial</li>
-                    <li>Press CONFIGURE MAC ADDRESS for Debaly Token - Queue Management System</li>
-                    <li>Add Your MAC Address</strong></li>
-                    <Text><b>Note</b></Text>
-                    <br/>
-                    <Text>You can add 3 MAC Address</Text>
-                    <br/>
-                    <Text>MAC Address FORMAT - <b>02:1B:43:13:54:C3</b></Text>
-                    <br/>
-                    <Text><a href="https://kb.netgear.com/1005/How-do-I-find-my-device-s-MAC-address"
-                             target="_blank">How to Find MAC Address</a></Text>
+<!--                    <li>Open the <strong><a href="https://verify.debaly.com"-->
+<!--                                            target="_blank">https://verify.debaly.com</strong></a> in Browser-->
+<!--                    </li>-->
+<!--                    <li>Sign in with codecanyon.net (envato) Creditial</li>-->
+<!--                    <li>Press CONFIGURE MAC ADDRESS for Debaly Token - Queue Management System</li>-->
+<!--                    <li>Add Your MAC Address</strong></li>-->
+<!--                    <Text><b>Note</b></Text>-->
+<!--                    <br/>-->
+<!--                    <Text>You can add 3 MAC Address</Text>-->
+<!--                    <br/>-->
+<!--                    <Text>MAC Address FORMAT - <b>02:1B:43:13:54:C3</b></Text>-->
+<!--                    <br/>-->
+<!--                    <Text><a href="https://kb.netgear.com/1005/How-do-I-find-my-device-s-MAC-address"-->
+<!--                             target="_blank">How to Find MAC Address</a></Text>-->
 
-                    <figure><img alt="" src="images/macInfo.png" style="width:50%;height:50%;margin: 10px" "></figure>
+<!--                    <figure><img alt="" src="images/macInfo.png" style="width:50%;height:50%;margin: 10px" "></figure>-->
 
-                </ol>
-                <br>
-                <h2>Que Management Client Configuration</h2>
-                <br>
-                <ol>
-                    <li>Open the <strong>que-management-client</strong> in IDE</li>
-                    <li>Open the <strong>src/environment.js</strong></li>
-                    <li>Replace your debaly license in DEBALY_TOKEN variable</strong></li>
+<!--                </ol>-->
+<!--                <br>-->
+<!--                <h2>Que Management Client Configuration</h2>-->
+<!--                <br>-->
+<!--                <ol>-->
+<!--                    <li>Open the <strong>que-management-client</strong> in IDE</li>-->
+<!--                    <li>Open the <strong>src/environment.js</strong></li>-->
+<!--                    <li>Replace your debaly license in DEBALY_TOKEN variable</strong></li>-->
 
 
-                    <pre>
-    const API_URL = 'http://localhost:8080';
-    const DEBALY_TOKEN = '<strong style="color:#0000ff;">REPLACE_YOUR_LICENSE</strong>';
-    export {API_URL,DEBALY_TOKEN};
-                        </pre>
+<!--                    <pre>-->
+<!--    const API_URL = 'http://localhost:8080';-->
+<!--    const DEBALY_TOKEN = '<strong style="color:#0000ff;">REPLACE_YOUR_LICENSE</strong>';-->
+<!--    export {API_URL,DEBALY_TOKEN};-->
+<!--                        </pre>-->
 
-                </ol>
-                <br>
-                <h2>Que Management Server Configuration</h2>
-                <br>
-                <ol>
-                    <li>Open the <strong>que-management-server</strong> in IDE</li>
-                    <li>Open the <strong>setting.xml</strong></li>
-                    <li>
-                        Replace your license
-                        <pre>
-    &lt;servers>
-        &lt;server>
-            &lt;id>github&lt;/id>
-            &lt;username>github&lt;/username>
-            &lt;password><strong style="color:#0000ff;">REPLACE_YOUR_TOKEN</strong>&lt;/password>
-        &lt;/server>
-    &lt;/servers>
-                        </pre>
-                    </li>
-                </ol>
+<!--                </ol>-->
+<!--                <br>-->
+<!--                <h2>Que Management Server Configuration</h2>-->
+<!--                <br>-->
+<!--                <ol>-->
+<!--                    <li>Open the <strong>que-management-server</strong> in IDE</li>-->
+<!--                    <li>Open the <strong>setting.xml</strong></li>-->
+<!--                    <li>-->
+<!--                        Replace your license-->
+<!--                        <pre>-->
+<!--    &lt;servers>-->
+<!--        &lt;server>-->
+<!--            &lt;id>github&lt;/id>-->
+<!--            &lt;username>github&lt;/username>-->
+<!--            &lt;password><strong style="color:#0000ff;">REPLACE_YOUR_TOKEN</strong>&lt;/password>-->
+<!--        &lt;/server>-->
+<!--    &lt;/servers>-->
+<!--                        </pre>-->
+<!--                    </li>-->
+<!--                </ol>-->
 
-            </div>
+<!--            </div>-->
 
-        </section>
+<!--        </section>-->
 
         <section class="section map-settings" id="db-setup">
             <div class="sec-title">
@@ -351,7 +351,7 @@ spring.datasource.password=<strong style="color:#0000ff;">REPLACE_YOUR_DB_PASSWO
                 <p style="color: #ac2925"><strong>Important!</strong></p>
                 <p>Please follow
                     <a href="#pre-installation">Pre installation</a>,
-                    <a href="#licences">License</a> and
+<!--                    <a href="#licences">License</a> and-->
                     <a href="#db-setup">Database setup</a>
                     before deploy to production</p>
                 <br>
@@ -359,7 +359,7 @@ spring.datasource.password=<strong style="color:#0000ff;">REPLACE_YOUR_DB_PASSWO
                         href="https://codeburst.io/how-to-setup-nginx-for-react-a504f38f95ed">link</a></h3>
                 <h3>Deploy back end in production environment <a
                         href="https://www.baeldung.com/spring-boot-app-as-a-service">link</a></h3>
-
+				Note:  <strong> Make sure copy the setting.xml file which located inside the project folder to Production folder (next to the jar file)</strong>
 
             </div>
 
